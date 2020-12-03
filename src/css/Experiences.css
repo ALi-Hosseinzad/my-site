@@ -1,0 +1,48 @@
+.profileName {
+    top: 10;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: rgb(252, 252, 252) !important;
+  }
+  .profileImg {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+  .profileItem {
+    height: 400px;
+    width: 400px;
+    background-color: transparent !important;
+    margin: 10px;
+    box-shadow: none !important;
+    text-align: left;
+  }
+  .profileName > hr {
+    color: white;
+    width: 400px;
+  }
+  .profileHeader {
+    color: white;
+    font-weight: bold;
+    font-family: "Times New Roman" !important;
+  }
+  .profileTitle {
+    color: rgb(16, 182, 238);
+    font-weight: bold;
+    font-family: "Times New Roman" !important;
+  }
+  .profileText {
+    color: rgb(255, 255, 255);
+    font-family: "Times New Roman" !important;
+  }
+  .profileLink {
+    color: rgb(16, 182, 238) !important;
+    text-decoration: none !important;
+  }
+  .profileLink:hover{
+    color: rgb(4, 96, 127) !important;
+  }
+  /* <a
+              className="profileLink"
+              href="http://www.ucna.ac.ir/"
+              target="_blank"
+            > */

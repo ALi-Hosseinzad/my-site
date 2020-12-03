@@ -1,0 +1,102 @@
+.profileName {
+  top: 10;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: rgb(252, 252, 252) !important;
+  text-align: center;
+}
+.profileImg {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  text-align: center;
+}
+.profileItem {
+  height: 400px;
+  width: 400px;
+  background-color: transparent !important;
+  margin: 10px;
+  box-shadow: none !important;
+  text-align: justify;
+}
+.profileName > hr {
+  color: white;
+  width: 400px;
+}
+.profileImg >img {
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  padding: 5px;
+  width: 50% !important;
+}
+.profileImg >img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.profileHeader {
+  color: white;
+  font-weight: bold;
+  font-family: "Times New Roman" !important;
+}
+.profileTitle {
+  color: rgb(16, 182, 238);
+  font-weight: bold;
+  font-family: "Times New Roman" !important;
+}
+.profileText {
+  color: rgb(255, 255, 255);
+  font-family: "Times New Roman" !important;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animated-title {
+  color: rgb(255, 255, 255);
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  left: 50%;
+  top:25%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 90vmin;
+  text-align: center;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 11vmin;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid rgb(255, 255, 255);
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}

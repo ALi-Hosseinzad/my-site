@@ -4,13 +4,13 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import "./../../css/Profile.css";
-import imgSrc from "./../../img/me.jpeg";
+import imgSrc from "./../../img/me/me.jpeg";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     position: "absolute",
     backgroundColor: "transparent",
-    top: "70%",
+    top: "80%",
   },
 }));
 

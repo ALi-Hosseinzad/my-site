@@ -4,7 +4,6 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import "./../../css/Experiences.css";
-import Link from "@material-ui/core/Link";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -27,7 +26,7 @@ function Experiences() {
             <hr />
           </Paper>
         </Grid>
-        <Grid item  xs={6}spacing={2}>
+        <Grid item  xs={6} spacing={2}>
           <Paper className="profileItem">
             <Typography variant="h4" gutterBottom className="profileHeader">
               Educations

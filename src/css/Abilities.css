@@ -1,0 +1,51 @@
+.AbilitiesName {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: rgb(252, 252, 252) !important;
+  margin: auto;
+  text-align: center;
+}
+
+.AbilitiesItem {
+  height: 400px;
+  width: 400px;
+  background-color: transparent !important;
+  margin: 10px;
+  box-shadow: none !important;
+}
+.AbilitiesName > hr {
+  color: white;
+  width: 400px;
+}
+.AbilitiesHeader {
+  color: white;
+  font-weight: bold;
+  font-family: "Times New Roman" !important;
+}
+.AbilitiesTitle {
+  color: rgb(16, 182, 238);
+  font-weight: bold;
+  font-family: "Times New Roman" !important;
+  text-align: left;
+  padding-left:10px ;
+}
+.box{
+  display: inline-flex;
+}
+.item{
+  display: inline-flex;
+  width: 220px;
+  color:white;
+}
+.rate{
+  display: block;
+  height: 45px;
+  padding: 5px;
+}
+.rate:hover{
+  opacity: 0.5;
+  font-weight: bold;
+  box-shadow: white !important;
+  background-color: #818080;
+}
+

@@ -1,6 +1,6 @@
 import React from "react";
-import Languages from "./Languages";
-import Skills from "./Skills";
+import Languages from "./Languages/Languages";
+import Skills from "./Skills/Skills";
 import Tools from "./Tools";
 function Abilities() {
   return (

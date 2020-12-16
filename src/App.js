@@ -1,8 +1,6 @@
-import FirstPage from './components/first page/FirstPage';
+import MainLayout from "./components/mainlayout/MainLayout";
 function App() {
-  return (
-    <FirstPage />
-  );
+  return <MainLayout />;
 }
 
 export default App;

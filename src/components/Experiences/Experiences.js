@@ -26,7 +26,7 @@ function Experiences() {
             <hr />
           </Paper>
         </Grid>
-        <Grid item  xs={6} spacing={2}>
+        <Grid item  xs={6}>
           <Paper className="profileItem">
             <Typography variant="h4" gutterBottom className="profileHeader">
               Educations

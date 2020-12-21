@@ -1,5 +1,4 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
@@ -11,10 +10,10 @@ import StarBorderIcon from "@material-ui/icons/StarBorder";
 export default function Filters(props) {
   return (
     <React.Fragment>
-      {props.props.map((item) => (
-        <Grid item xs={6}>
+      {props.props.map((item,index) => (
+        <Grid item xs={6} key={index}>
           <Paper className="AbilitiesItem">
-            <div className="rate" key={item.id}>
+            <div className="rate"key={item.id}>
               <Typography component="label" className="item">
                 {item.name}
               </Typography>

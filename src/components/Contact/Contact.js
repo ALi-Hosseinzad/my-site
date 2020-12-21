@@ -5,52 +5,24 @@ import { Typography } from "@material-ui/core";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fab } from '@fortawesome/free-brands-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faWhatsapp,faLinkedinIn,faSkype,faTelegramPlane,faTwitter } from '@fortawesome/free-brands-svg-icons';
 import "./../../css/Contact.css";
+import { ContactArray } from './ContactArray';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     position: "absolute",
     backgroundColor: "transparent",
-    top: "480%",
+    top: "500%",
     left: "25%",
   },
 }));
 
 export default function Contact() {
+  library.add(fab,faGithub, faWhatsapp,faLinkedinIn,faSkype,faTelegramPlane,faTwitter );
   const classes = useStyles();
-  const arr = [
-    {
-      id: 0,
-      icon: "github-alt",
-      url: "#",
-    },
-    {
-      id: 1,
-      icon: "whatsapp",
-      url: "#",
-    },
-    {
-      id: 2,
-      icon: "linkedin-in",
-      url: "#",
-    },
-    {
-      id: 3,
-      icon: "skype",
-      url: "#",
-    },
-    {
-      id: 4,
-      icon: "telegram-plane",
-      url: "#",
-    },
-    {
-      id: 5,
-      icon: "twitter",
-      url: "#",
-    },
-  ];
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
@@ -61,12 +33,12 @@ export default function Contact() {
         </Grid>
         <Grid item xs={12}>
           <List>
-            {arr.map((value) => {
+            {ContactArray.map((value) => {
               return (
                 <ListItem key={value.id}>
-                  <a href={value.url} alt={value.icon}>
+                  <a href={value.url} alt={value.icon} target="_blank" rel='noreferrer'>
                     <FontAwesomeIcon
-                      icon={['fab', `${value.icon}`]}
+                      icon={["fab", `${value.icon}`]}
                       className="icon"
                     />
                   </a>

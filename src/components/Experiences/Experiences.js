@@ -39,6 +39,7 @@ function Experiences() {
               className="profileLink"
               href="http://www.ucna.ac.ir/"
               target="_blank"
+              rel='noreferrer'
             >
               UCNA
             </a>
@@ -52,6 +53,7 @@ function Experiences() {
               className="profileLink"
               href="http://www.mftabriz.com/Main.aspx"
               target="_blank"
+              rel='noreferrer'
             >
               mftabriz
             </a>
@@ -65,6 +67,7 @@ function Experiences() {
               className="profileLink"
               href="https://www.tabrizu.ac.ir/en"
               target="_blank"
+              rel='noreferrer'
             >
               University of Tabriz
             </a>
@@ -86,6 +89,7 @@ function Experiences() {
               className="profileLink"
               href="https://www.hyperoffice.com/collaboration-suite/"
               target="_blank"
+              rel='noreferrer'
             >
               hyperoffice
             </a>
@@ -99,6 +103,7 @@ function Experiences() {
               className="profileLink"
               href="https://www.linkedin.com/company/teanab/"
               target="_blank"
+              rel='noreferrer'
             >
               Teanab
             </a>

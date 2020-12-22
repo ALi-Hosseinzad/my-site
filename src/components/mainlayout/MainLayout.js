@@ -5,7 +5,6 @@ import Experiences from "../Experiences/Experiences";
 import Abilities from "../Abilities/Abilities";
 import Cantact from "../Contact/Contact";
 import Canvas from "./Canvas";
-import "./../../css/Canvas.css";
 import { PARAMS } from "./params";
 const paramsMap = [0, 1, 2, 3, 1];
 
@@ -27,8 +26,8 @@ export default class App extends Component {
           <Profile />
           <Experiences />
           <Abilities />
-          {/* <Projects /> */}
           <Cantact />
+          <Projects />
         </div>
       </React.Fragment>
     );
